@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #382368, #30265c, #211a42); /* Use hexadecimal color codes */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 20px 0;
+    background-color: rgba(24, 13, 73, 0.8); /* Semi-transparent black background */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure header is above other content */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 24px;
+    margin-left: 20px;
+    color: #ffffff; /* White text color */
+}
+
+nav {
+    margin-right: 20px;
+}
+
+button {
+    background: none;
+    border: none;
+    color: #ffffff; /* White text color */
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+button:hover {
+    color: #cccccc; /* Light gray text color on hover */
+}
+
+.notification {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #352953;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add box shadow for depth */
+    transition: opacity 0.5s ease; /* Add transition effect */
+    opacity: 1;
+    z-index: 1000; /* Set a higher z-index to ensure it's above other content */
+}
+
+.notification-box {
+    width: 300px; /* Adjust width */
+    text-align: center;
+}
+
+.notification p {
+    margin-bottom: 10px;
+}
+
+.notification button {
+    background-color: #4a4b9e; /* Green color for the button */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.notification button:hover {
+    background-color: #615ac5; /* Darker green color on hover */
+}
+
+.dont-show-again {
+    font-size: 12px;
+    color: #cccccc; /* Light gray text color */
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.dont-show-again:hover {
+    text-decoration: underline; /* Underline text on hover */
+}
+/* Add CSS for scroll-down arrow */
+.scroll-down {
+    position: absolute;
+    bottom: 18px;
+    left: 26%;
+    transform: translateX(-50%);
+    width: 0px;
+    height: 60px;
+    border: 2px solid #a710ff;
+    border-radius: 50%;
+    border-top: none;
+    border-left: none;
+    cursor: pointer;
+    animation: scroll-down 1s infinite alternate; /* Add animation */
+}
+
+/* Hover effect for buttons */
+nav button:hover {
+    color: #add8e6; /* Light blue color on hover */
+}
+
+/* Keyframes for scroll-down animation */
+@keyframes scroll-down {
+    0% {
+        transform: translateX(-50%) rotate(45deg);
+    }
+    100% {
+        transform: translateX(-50%) rotate(405deg);
+    }
+}
+
